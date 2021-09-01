@@ -2,6 +2,7 @@ import 'package:artstreet/components/form/button.dart';
 import 'package:artstreet/components/form/input.dart';
 
 import 'singup.dart';
+import 'home.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -63,7 +64,7 @@ class LoginPage extends StatelessWidget {
         FormInput(
           true,
           textType: TextInputType.text,
-          label: "Senha Coloque aqui",
+          label: "Senha",
           color: Colors.black38,
           fontWeight: FontWeight.w400,
           fontSize: 20,
@@ -78,7 +79,7 @@ class LoginPage extends StatelessWidget {
           onPressed: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SignUp()),
+              MaterialPageRoute(builder: (context) => HomeScreen()),
             ),
           },
         ),
