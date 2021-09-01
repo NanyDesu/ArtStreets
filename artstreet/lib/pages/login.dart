@@ -2,6 +2,7 @@ import 'package:artstreet/components/form/button.dart';
 import 'package:artstreet/components/form/input.dart';
 
 import 'singup.dart';
+import 'home.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -78,7 +79,7 @@ class LoginPage extends StatelessWidget {
           onPressed: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SignUp()),
+              MaterialPageRoute(builder: (context) => HomeScreen()),
             ),
           },
         ),
