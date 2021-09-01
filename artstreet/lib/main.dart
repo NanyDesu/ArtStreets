@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Art Street',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.pink,
       ),
       home: LoginPage(),
     );
