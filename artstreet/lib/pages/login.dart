@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget {
         FormInput(
           true,
           textType: TextInputType.text,
-          label: "Senha Coloque aqui",
+          label: "Senha",
           color: Colors.black38,
           fontWeight: FontWeight.w400,
           fontSize: 20,
