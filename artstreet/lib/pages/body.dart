@@ -20,9 +20,13 @@ class Body extends StatelessWidget{
           child: Row(
             children: <Widget>[
               Text(
+              
                 'Are you Ready?',
                 style: Theme.of(context).textTheme.headline5!.copyWith(
-                color: Colors.white, fontWeight: FontWeight.bold
+                color: Colors.white, 
+                fontWeight: FontWeight.bold,
+                
+
                 ),
               ),
             ],
@@ -34,8 +38,8 @@ class Body extends StatelessWidget{
             right: 0,
             child: Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-              padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20),
             height: 54,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -50,12 +54,13 @@ class Body extends StatelessWidget{
             ),
             child: TextField(
               decoration: InputDecoration(
-                hintText: "Search",
+                hintText: "Search whith numbers",
                 hintStyle: TextStyle(
                   color: Colors.pink.withOpacity(0.5),
                   ),
                   enabledBorder: InputBorder.none,
                   focusedBorder: InputBorder.none,
+                icon: Icon(Icons.search),
               ),
             ),
             ),
