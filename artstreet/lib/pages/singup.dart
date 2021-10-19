@@ -2,6 +2,8 @@ import 'package:artstreet/components/form/button.dart';
 import 'package:artstreet/components/form/input.dart';
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -85,6 +87,25 @@ class SignUp extends StatelessWidget {
            
            
           },
+        ),
+         SizedBox(
+          height: 10,
+        ),
+        Container(
+          height: 40,
+          alignment: Alignment.center,
+          child: FlatButton(
+            child: Text(
+              "Faça Login"
+            ),
+            onPressed: ()=>{
+               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>LoginPage()),
+            ),
+            },
+          ),
+   
         ),
       ],
     );
