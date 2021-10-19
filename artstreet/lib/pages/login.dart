@@ -83,6 +83,25 @@ class LoginPage extends StatelessWidget {
             ),
           },
         ),
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+          height: 40,
+          alignment: Alignment.center,
+          child: FlatButton(
+            child: Text(
+              "Cadastre-se"
+            ),
+            onPressed: ()=>{
+               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) =>SignUp()),
+            ),
+            },
+          ),
+   
+        ),
       ],
     );
   }
