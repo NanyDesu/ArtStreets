@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class FormInput extends StatelessWidget {
-  final TextInputType? textType;
+  final TextInputType textType;
   final bool obscureText;
-  final String? label;
-  final Color? color;
-  final FontWeight? fontWeight;
-  final double? fontSize;
+  final String label;
+  final Color color;
+  final FontWeight fontWeight;
+  final double fontSize;
 
   FormInput(
     this.obscureText, {

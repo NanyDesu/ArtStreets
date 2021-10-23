@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class FormButton extends StatelessWidget {
   final String text;
-  final Color? color;
+  final Color color;
   final double borderRadius;
-  final Function()? onPressed;
+  final Function() onPressed;
 
   FormButton(
     this.borderRadius,
