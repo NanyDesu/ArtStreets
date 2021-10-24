@@ -1,3 +1,4 @@
+import 'package:artstreet/pages/cadPet.dart';
 import 'package:flutter/material.dart';
 import 'body.dart';
 
@@ -8,13 +9,18 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Image.asset("assets/imagens/logoosf.jpg"),
+        title: Text('Hello'),
         backgroundColor: Color(0xD5FBFF),
         actions: <Widget>[
 
           new IconButton(
             icon: actionIcon,
-
+            onPressed: () => {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => CadPet()),
+            ),
+          },
           )
         ]
         
