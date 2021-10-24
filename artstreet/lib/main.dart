@@ -10,9 +10,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Art Street',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
       home: LoginPage(),
     );
   }

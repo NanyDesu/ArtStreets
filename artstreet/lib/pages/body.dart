@@ -1,4 +1,6 @@
+import 'package:artstreet/pages/home.dart';
 import 'package:flutter/material.dart';
+
 
 class Body extends StatelessWidget {
   @override
