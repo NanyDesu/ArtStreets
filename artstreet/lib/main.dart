@@ -1,5 +1,8 @@
-import 'pages/login.dart';
+import 'package:pata_aqui/common/themes/app_bar.dart';
+
 import 'package:flutter/material.dart';
+import 'package:pata_aqui/pages/home_page.dart';
+import 'package:pata_aqui/pages/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Art Street',
+      title: 'Pata Aqui',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      theme: buildAppBarTheme(),
+      home: HomePage(),
     );
   }
 }
-  

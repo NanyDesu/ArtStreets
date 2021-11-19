@@ -1,6 +1,6 @@
-import 'package:artstreet/components/form/button.dart';
-import 'package:artstreet/components/form/input.dart';
 import 'package:flutter/material.dart';
+import 'package:pata_aqui/components/form/button.dart';
+import 'package:pata_aqui/components/form/input.dart';
 
 import 'login.dart';
 
@@ -10,7 +10,6 @@ class SignUp extends StatelessWidget {
     return Scaffold(
       body: buildBody(context),
     );
-
   }
 
   buildBody(BuildContext context) {
@@ -83,29 +82,23 @@ class SignUp extends StatelessWidget {
           30,
           "CADASTRAR",
           color: Colors.white,
-          onPressed: () => {
-           
-           
-          },
+          onPressed: () => {},
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
         Container(
           height: 40,
           alignment: Alignment.center,
           child: FlatButton(
-            child: Text(
-              "Faça Login"
-            ),
-            onPressed: ()=>{
-               Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) =>LoginPage()),
-            ),
+            child: Text("Faça Login"),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              ),
             },
           ),
-   
         ),
       ],
     );
